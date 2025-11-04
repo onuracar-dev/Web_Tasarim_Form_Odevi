@@ -56,8 +56,34 @@
 								<!--html sayfalarında bir sayfadan diğerine gitmek için a tagı kullanılır <a></a> -->
 
 
-<a href="https://www.google.com/">Google</a>
+<a href="https://www.google.com/" target="_blank" rel="author">Google<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" width="50" height="50">
+</a><br>
 
+<!--Target Özellikleri
+
+_blank : yeni pencerede açar
+_self  : tıklatıldığı karede açar (varsayılan değerdir)
+_parent: üst çerçevede açar
+_top   : pencerenin tüm üst gövdesinde açar
+-->
+
+
+<!--Rel
+rel geçerli belge ile bağlı belge arasındaki ilişkiyi belirtir
+author		: bağlantının belgenin yazarını temsil ettiğini belirtir
+license		: bağlantının belgenin lisans bilgilerini içerdiğini belirtir
+nofollow	: bağlantının bize ait olmadığının ve desteklemediğimizi belirtir
+
+-->
+
+<!--Download
+linke tıkladığında indirir
+değer ataması yapılırsa o isimle indirilir atanmazsa kaynaktaki adıyla indirilir
+-->
+
+<a href="link" download>Logo İndir</a><br>
+<a href="link" download="Logo">Logo İndir</a>
 
 </form>
 </body>
