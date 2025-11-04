@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/script.js"></script>
+
+    <!--FORM TAGLARI -->
+<form>
+<label for="Ad_Soyad">Ad Soyad</label>
+<br>
+<input type="text" id="Ad_Soyad" name="Ad_Soyad" size="35">
+<br>
+<label for="sifre">Şifre</label>
+<br>
+<input type="password" id="sifre" name="sifre" size="35">
+<br>
+<br>
+<label for="Hobiler">Hobiler</label>
+<br>
+<select id="Hobi" name="Hobi" size="3" multiple>
+<option value="Hobi Seçiniz" selected>Hobi Seçiniz</option>
+<option value="Basketbol">Basketbol</option>
+<option value="Hentbol">Hentbol</option>
+</select>
+<br>
+<br>
+<input type="checkbox" id="Futbol1" name="Futbol1" value="Futbol1">
+<label for="Futbol1">Futbol</label><br>
+<input type="checkbox" id="Basket1" name="Basket1" value="Basket1">
+<label for="Basket1">Basket</label><br>
+<input type="checkbox" id="Hentbol1" name="Hentbol1" value="Hentbol1">
+<label for="Hentbol1">Hentbol</label>
+<br><br>
+<label for="cinsiyet">Cinsiyet</label><br>
+<input type="radio" id="erkek" name="cinsiyet" value="erkek">
+<label for="erkek">Erkek</label><br>   				<!--radio kullanma amacı name e sahip olanlardan sadece birini seçmek-->
+<input type="radio" id="kadın" name="cinsiyet" value="kadın">
+<label for="kadın">Kadın</label><br>
+
+<label for="aciklama">Açıklamalar</label><br>
+<textarea name="message" rows="10" cols="35"></textarea>    	<!-- rows kaç satır , cols kaç sütun -->
+
+
+
+<!--SUBMIT VE RESET BUTONLARI-->
+<br>
+<form action="/kayit_ol.php" method="get">
+<input type="submit" value="Kayıt Ol">
+<input type="reset" value="Sıfırla">
+</form>
+
+
+
+
+</form>
+</body>
+</html>
